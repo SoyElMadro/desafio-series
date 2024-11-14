@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const seriesRoutes = require("./routes/seriesRoutes");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const connectDB = async () => {
   try {
