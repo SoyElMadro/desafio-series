@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3000;
 
 connectDB();
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use("/api", seriesRoutes);
 
 app.listen(PORT, () => {

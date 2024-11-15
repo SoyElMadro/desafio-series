@@ -9,7 +9,7 @@ exports.createSerie = async (req, res) => {
   }
 };
 
-exports.getSeries = async (req, res) => {
+exports.getSeries = async (_, res) => {
   try {
     const series = await Serie.find();
     res.json(series);
